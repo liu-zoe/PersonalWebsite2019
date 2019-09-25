@@ -1,0 +1,6 @@
+# Folders to ignore
+favicon_io_black/
+favicon_io_white/
+
+# Files to ignore
+Inspirations.md

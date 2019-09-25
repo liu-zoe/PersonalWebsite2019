@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<title>Zoe Liu | Data Scientist</title>
+  <head>
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Slab|Exo|Raleway|Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+  <!--HEADER-->
+  <div id="header" class="header">
+    <div class="container">
+      <b>ZOE LIU</b>
+    </div>
+  </div>
+<!--
+      <nav class="floating-menu">
+          <a href="#home">HOME</a>
+          <a href="#aboutme">ABOUT ME</a>
+          <a href="#work">WORK</a>
+          <a href="#contact">CONTACT</a>
+      </nav>
+-->
+    <!--Intro-->
+    <div id="home" class="jumbotron">
+      <div class="container">
+          <h1>Hello there!</h1>
+          <h1>My name is Zoe.</h1>
+          <h1>I'm a Twin Cities-based data scientist. </h1>
+          <h1 id="blinker" class="word_blinker">I can code in Python.</h1>
+      </div>
+    </div>
+
+<!--Bottom banner -->
+    <div class="bottom">
+      <div class="container">
+          <a href="mailto:zoelzh@gmail.com" class='effect-underline'>zoelzh@gmail.com</a>
+          <a href="https://www.linkedin.com/in/liuzoe/" class='effect-underline'>LinkedIn</a>
+          <a href="https://github.com/liu-zoe" class='effect-underline'>GitHub</a>
+      </div>
+    </div>
+
+  <!--Javascript-->
+  <script>
+  // TO toggle the text in jumbotron//
+  function timedText() {
+      setTimeout(myTimeout1, 0)
+      setTimeout(myTimeout2, 2000)
+      setTimeout(myTimeout3, 4000)
+      setTimeout(myTimeout4, 6000)
+      setTimeout(myTimeout5, 8000)
+      setTimeout(myTimeout6, 10000)
+  }
+  timedText();
+
+  setInterval(timedText, 12000);
+
+  function myTimeout1() {
+      document.getElementById("blinker").innerHTML = "I can code in Python.";
+  }
+  function myTimeout2() {
+      document.getElementById("blinker").innerHTML = "I can code in R.";
+  }
+  function myTimeout3() {
+      document.getElementById("blinker").innerHTML = "I can code in SAS.";
+  }
+  function myTimeout4() {
+      document.getElementById("blinker").innerHTML = "I can code in HTML/CSS... well a little.";
+  }
+  function myTimeout5() {
+      document.getElementById("blinker").innerHTML = "I am a fast learner.";
+  }
+  function myTimeout6() {
+      document.getElementById("blinker").innerHTML = "I love data visualization.";
+  }
+
+//To make the naviation bar sticky//
+//   $(document).ready(function() {
+//   var stickyNavTop = $('.nav').offset().top;
+
+//   var stickyNav = function(){
+//     var scrollTop = $(window).scrollTop();
+
+//     if (scrollTop > stickyNavTop) {
+//       $('.nav').addClass('sticky');
+//     } else {
+//       $('.nav').removeClass('sticky');
+//     }
+//   };
+
+//   stickyNav();
+
+//   $(window).scroll(function() {
+//     stickyNav();
+//   });
+// });
+  </script>
+
+  </body>
+
+</html>
